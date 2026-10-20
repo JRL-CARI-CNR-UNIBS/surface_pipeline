@@ -1,0 +1,96 @@
+# Repositories of the CARI-JRL surface pipeline (ROS 2 Jazzy).
+# Usage, from the src folder of the workspace: vcs import < surface_pipeline/surface.repos
+repositories:
+  surface_acquisition:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/surface_acquisition.git
+    version: master
+  surface_reconstruction:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/surface_reconstruction.git
+    version: docs/api-documentation
+  surface_reconstruction_msgs:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/surface_reconstruction_msgs.git
+    version: master
+  surface_raster_planner:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/surface_raster_planner.git
+    version: docs/api-documentation
+  surface_raster_planner_msgs:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/surface_raster_planner_msgs.git
+    version: master
+  surface_path_planning:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning
+    version: devel
+  surface_path_planning_msgs:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning_msgs.git
+    version: master
+  surface_gui:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/surface_gui.git
+    version: master
+  time_parametrization:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/time_parametrization
+    version: docs/api-documentation
+  time_parametrization_msgs:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/time_parametrization_msgs
+    version: master
+  # dependencies of surface_path_planning
+  cnr_class_loader:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/cnr_class_loader
+    version: modern_cmake
+  cnr_logger:
+    type: git
+    url: https://github.com/CNR-STIIMA-IRAS/cnr_logger
+    version: master
+  cnr_param:
+    type: git
+    url: https://github.com/CNR-STIIMA-IRAS/cnr_param
+    version: master
+  graph_core:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/graph_core.git
+    version: removing_cnr_logger_and_params
+  graph_display:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/graph_display.git
+    version: ros2
+  mirrt_star:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/mirrt_star
+    version: api_documentation
+  moveit_collision_checker:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/moveit_collision_checker.git
+    version: ros2
+  collision_check_server:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/collision_check_server
+    version: ros2
+  ik_solver:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/ik_solver
+    version: task_redundancy
+  ik_solver_msgs:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/ik_solver_msgs
+    version: master
+  ur_ik_solver:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/ur_ik_solver
+    version: ros2
+  parallel_multigoal_planner:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/parallel_multigoal_planner.git
+    version: master
+  parallel_multigoal_planner_msgs:
+    type: git
+    url: https://github.com/JRL-CARI-CNR-UNIBS/parallel_multigoal_planner_msgs.git
+    version: master

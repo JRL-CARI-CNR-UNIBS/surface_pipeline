@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>surface_pipeline</name>
+  <version>0.1.0</version>
+  <description>Metapackage of the surface pipeline: acquisition, reconstruction, raster path, joint path, time parametrization and Rviz panel. Developed by CARI-JRL.</description>
+  <maintainer email="manuel.beschi@unibs.it">Manuel Beschi (CARI-JRL)</maintainer>
+  <author email="manuel.beschi@unibs.it">Manuel Beschi</author>
+  <author>Elisa Zappa</author>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>surface_acquisition</exec_depend>
+  <exec_depend>surface_reconstruction</exec_depend>
+  <exec_depend>surface_reconstruction_msgs</exec_depend>
+  <exec_depend>surface_raster_planner</exec_depend>
+  <exec_depend>surface_raster_planner_msgs</exec_depend>
+  <exec_depend>surface_path_planning</exec_depend>
+  <exec_depend>surface_path_planning_msgs</exec_depend>
+  <exec_depend>time_parametrization</exec_depend>
+  <exec_depend>time_parametrization_msgs</exec_depend>
+  <exec_depend>surface_gui</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
