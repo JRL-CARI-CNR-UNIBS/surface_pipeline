@@ -24,7 +24,7 @@ repositories:
   surface_path_planning:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning
-    version: devel
+    version: removing_cnr_logger_and_params
   surface_path_planning_msgs:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning_msgs.git
@@ -46,14 +46,6 @@ repositories:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/cnr_class_loader
     version: modern_cmake
-  cnr_logger:
-    type: git
-    url: https://github.com/CNR-STIIMA-IRAS/cnr_logger
-    version: master
-  cnr_param:
-    type: git
-    url: https://github.com/CNR-STIIMA-IRAS/cnr_param
-    version: master
   graph_core:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/graph_core.git
@@ -65,19 +57,19 @@ repositories:
   mirrt_star:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/mirrt_star
-    version: api_documentation
+    version: removing_cnr_logger_and_params
   moveit_collision_checker:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/moveit_collision_checker.git
-    version: ros2
+    version: removing_cnr_logger_and_params
   collision_check_server:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/collision_check_server
-    version: ros2
+    version: removing_cnr_logger_and_params
   ik_solver:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/ik_solver
-    version: task_redundancy
+    version: removing_cnr_logger_and_params
   ik_solver_msgs:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/ik_solver_msgs
@@ -85,11 +77,11 @@ repositories:
   ur_ik_solver:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/ur_ik_solver
-    version: ros2
+    version: removing_cnr_logger_and_params
   parallel_multigoal_planner:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/parallel_multigoal_planner.git
-    version: master
+    version: removing_cnr_logger_and_params
   parallel_multigoal_planner_msgs:
     type: git
     url: https://github.com/JRL-CARI-CNR-UNIBS/parallel_multigoal_planner_msgs.git

@@ -34,7 +34,7 @@ This repository contains no code. It provides:
 | [`surface_acquisition`](https://github.com/JRL-CARI-CNR-UNIBS/surface_acquisition/tree/master) | Live filtering of the depth camera point cloud (crop, voxel grid, outlier removal, largest cluster, normals) | [README](https://github.com/JRL-CARI-CNR-UNIBS/surface_acquisition/blob/master/README.md) · [Tutorial](https://github.com/JRL-CARI-CNR-UNIBS/surface_acquisition/blob/master/docs/TUTORIAL.md) · [API](https://github.com/JRL-CARI-CNR-UNIBS/surface_acquisition/blob/master/docs/API.md) |
 | [`surface_reconstruction`](https://github.com/JRL-CARI-CNR-UNIBS/surface_reconstruction/tree/docs/api-documentation) | Merges the clouds acquired from different robot poses and reconstructs a mesh (MLS + Poisson) | [README](https://github.com/JRL-CARI-CNR-UNIBS/surface_reconstruction/blob/docs/api-documentation/README.md) · [Tutorial](https://github.com/JRL-CARI-CNR-UNIBS/surface_reconstruction/blob/docs/api-documentation/docs/TUTORIAL.md) · [API](https://github.com/JRL-CARI-CNR-UNIBS/surface_reconstruction/blob/docs/api-documentation/docs/API.md) |
 | [`surface_raster_planner`](https://github.com/JRL-CARI-CNR-UNIBS/surface_raster_planner/tree/docs/api-documentation) | Raster (serpentine) tool path over the mesh, by PCA and ray casting | [README](https://github.com/JRL-CARI-CNR-UNIBS/surface_raster_planner/blob/docs/api-documentation/README.md) · [Tutorial](https://github.com/JRL-CARI-CNR-UNIBS/surface_raster_planner/blob/docs/api-documentation/docs/TUTORIAL.md) · [API](https://github.com/JRL-CARI-CNR-UNIBS/surface_raster_planner/blob/docs/api-documentation/docs/API.md) |
-| [`surface_path_planning`](https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning/tree/devel) | Converts the tool path into a joint path exploiting the task redundancy | [README](https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning/blob/devel/README.md) · [Tutorial](https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning/blob/devel/docs/TUTORIAL.md) · [API](https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning/blob/devel/docs/API.md) |
+| [`surface_path_planning`](https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning/tree/removing_cnr_logger_and_params) | Converts the tool path into a joint path exploiting the task redundancy | [README](https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning/blob/removing_cnr_logger_and_params/README.md) · [Tutorial](https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning/blob/removing_cnr_logger_and_params/docs/TUTORIAL.md) · [API](https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning/blob/removing_cnr_logger_and_params/docs/API.md) |
 | [`time_parametrization`](https://github.com/JRL-CARI-CNR-UNIBS/time_parametrization/tree/docs/api-documentation) | Time parametrization of the joint path | [README](https://github.com/JRL-CARI-CNR-UNIBS/time_parametrization/blob/docs/api-documentation/README.md) · [Tutorial](https://github.com/JRL-CARI-CNR-UNIBS/time_parametrization/blob/docs/api-documentation/docs/TUTORIAL.md) · [API](https://github.com/JRL-CARI-CNR-UNIBS/time_parametrization/blob/docs/api-documentation/docs/API.md) |
 | [`surface_gui`](https://github.com/JRL-CARI-CNR-UNIBS/surface_gui/tree/master) | Rviz 2 panel that drives the whole pipeline | [README](https://github.com/JRL-CARI-CNR-UNIBS/surface_gui/blob/master/README.md) |
 
@@ -53,17 +53,15 @@ Dependencies of `surface_path_planning` (also listed in `surface.repos`):
 |---|---|
 | [`graph_core`](https://github.com/JRL-CARI-CNR-UNIBS/graph_core/tree/removing_cnr_logger_and_params) | `removing_cnr_logger_and_params` |
 | [`graph_display`](https://github.com/JRL-CARI-CNR-UNIBS/graph_display/tree/ros2) | `ros2` |
-| [`mirrt_star`](https://github.com/JRL-CARI-CNR-UNIBS/mirrt_star/tree/api_documentation) | `api_documentation` |
-| [`moveit_collision_checker`](https://github.com/JRL-CARI-CNR-UNIBS/moveit_collision_checker/tree/ros2) | `ros2` |
-| [`collision_check_server`](https://github.com/JRL-CARI-CNR-UNIBS/collision_check_server/tree/ros2) | `ros2` |
-| [`ik_solver`](https://github.com/JRL-CARI-CNR-UNIBS/ik_solver/tree/task_redundancy) | `task_redundancy` |
+| [`mirrt_star`](https://github.com/JRL-CARI-CNR-UNIBS/mirrt_star/tree/removing_cnr_logger_and_params) | `removing_cnr_logger_and_params` |
+| [`moveit_collision_checker`](https://github.com/JRL-CARI-CNR-UNIBS/moveit_collision_checker/tree/removing_cnr_logger_and_params) | `removing_cnr_logger_and_params` |
+| [`collision_check_server`](https://github.com/JRL-CARI-CNR-UNIBS/collision_check_server/tree/removing_cnr_logger_and_params) | `removing_cnr_logger_and_params` |
+| [`ik_solver`](https://github.com/JRL-CARI-CNR-UNIBS/ik_solver/tree/removing_cnr_logger_and_params) | `removing_cnr_logger_and_params` |
 | [`ik_solver_msgs`](https://github.com/JRL-CARI-CNR-UNIBS/ik_solver_msgs/tree/master) | `master` |
-| [`ur_ik_solver`](https://github.com/JRL-CARI-CNR-UNIBS/ur_ik_solver/tree/ros2) | `ros2` |
-| [`parallel_multigoal_planner`](https://github.com/JRL-CARI-CNR-UNIBS/parallel_multigoal_planner/tree/master) | `master` |
+| [`ur_ik_solver`](https://github.com/JRL-CARI-CNR-UNIBS/ur_ik_solver/tree/removing_cnr_logger_and_params) | `removing_cnr_logger_and_params` |
+| [`parallel_multigoal_planner`](https://github.com/JRL-CARI-CNR-UNIBS/parallel_multigoal_planner/tree/removing_cnr_logger_and_params) | `removing_cnr_logger_and_params` |
 | [`parallel_multigoal_planner_msgs`](https://github.com/JRL-CARI-CNR-UNIBS/parallel_multigoal_planner_msgs/tree/master) | `master` |
 | [`cnr_class_loader`](https://github.com/JRL-CARI-CNR-UNIBS/cnr_class_loader/tree/modern_cmake) | `modern_cmake` |
-| [`cnr_logger`](https://github.com/CNR-STIIMA-IRAS/cnr_logger/tree/master) | `master` |
-| [`cnr_param`](https://github.com/CNR-STIIMA-IRAS/cnr_param/tree/master) | `master` |
 
 ## Requirements
 
@@ -77,7 +75,7 @@ sudo rosdep init   # only the first time
 rosdep update
 ```
 
-- System packages used by the `cnr_*` and `ik_solver` libraries (not all of them are resolved by `rosdep`):
+- System packages used by `cnr_class_loader`, `graph_core` and `ik_solver` (not all of them are resolved by `rosdep`):
 
 ```bash
 sudo apt install -y libeigen3-dev libboost-all-dev libyaml-cpp-dev libpoco-dev liblog4cxx-dev libgtest-dev
@@ -108,15 +106,6 @@ cd ~/ros2_ws/src
 vcs pull < surface_pipeline/surface.repos
 ```
 
-### Environment
-
-`surface_path_planning` needs these variables (add them to `~/.bashrc`):
-
-```bash
-export CNR_PARAM_ROOT_DIRECTORY="/tmp/cnr_param"
-export IK_SOLVER_LOGGER_CONFIG_PATH="${HOME}/ros2_ws/install/ik_solver_core/share/ik_solver_core/config/default_logger.yaml"
-```
-
 ## Running
 
 Each node has its own launch file. See the README of each package for the arguments and the configuration.
@@ -130,7 +119,7 @@ ros2 launch surface_path_planning compute_joint_path.launch.py
 
 Then start Rviz 2 and add the panel: **Panels → Add New Panel → surface_gui → SurfacePanel**.
 
-The robot cell (description, MoveIt configuration, drivers) is not part of this metapackage. For the CARI-JRL cell see [`sharework_cell`](https://github.com/JRL-CARI-CNR-UNIBS/sharework_cell/tree/jazzy-cleaned) (branch `jazzy-cleaned`) and the README of [`surface_path_planning`](https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning/blob/devel/README.md).
+The robot cell (description, MoveIt configuration, drivers) is not part of this metapackage. For the CARI-JRL cell see [`sharework_cell`](https://github.com/JRL-CARI-CNR-UNIBS/sharework_cell/tree/jazzy-cleaned) (branch `jazzy-cleaned`) and the README of [`surface_path_planning`](https://github.com/JRL-CARI-CNR-UNIBS/surface_path_planning/blob/removing_cnr_logger_and_params/README.md).
 
 ## License
 
